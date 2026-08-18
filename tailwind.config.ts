@@ -1,0 +1,63 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  darkMode: "class",
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        background: "#10131b",
+        surface: "#10131b",
+        "surface-dim": "#10131b",
+        "surface-bright": "#363942",
+        "surface-container-lowest": "#0b0e16",
+        "surface-container-low": "#181c23",
+        "surface-container": "#1c2028",
+        "surface-container-high": "#272a32",
+        "surface-container-highest": "#31353d",
+        "surface-variant": "#31353d",
+        "surface-tint": "#adc6ff",
+        primary: "#adc6ff",
+        "primary-container": "#4b8eff",
+        "on-primary": "#002e69",
+        "on-primary-container": "#00285c",
+        "primary-fixed": "#d8e2ff",
+        "primary-fixed-dim": "#adc6ff",
+        secondary: "#a5e7ff",
+        "secondary-container": "#00d2ff",
+        "on-secondary": "#003543",
+        "on-secondary-container": "#00566a",
+        tertiary: "#ffb595",
+        "tertiary-container": "#ef6719",
+        "on-tertiary": "#571e00",
+        "on-tertiary-container": "#4c1a00",
+        "on-surface": "#e0e2ed",
+        "on-surface-variant": "#c1c6d7",
+        "inverse-surface": "#e0e2ed",
+        "inverse-on-surface": "#2d3039",
+        outline: "#8b90a0",
+        "outline-variant": "#414755",
+        error: "#ffb4ab",
+        "error-container": "#93000a",
+        "on-error": "#690005",
+        "on-error-container": "#ffdad6",
+        "brand-blue": "#007aff",
+        "brand-cyan": "#00d2ff",
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+      },
+      boxShadow: {
+        glass: "0 8px 32px 0 rgba(0, 0, 0, 0.37)",
+        glow: "0 0 20px rgba(75, 142, 255, 0.15)",
+        "glow-cyan": "0 0 20px rgba(0, 210, 255, 0.2)",
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
